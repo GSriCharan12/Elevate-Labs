@@ -1,4 +1,4 @@
-# Task-8: Simple Blog Layout Using Bootstrap 5
+# Simple Blog Layout Using Bootstrap 5
 
 A modern, responsive blog layout built with **Bootstrap 5**, featuring high-end aesthetics and premium UI components.
 
