@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #0dcaf0;
+    /* Using info color for Technova */
+    --tech-dark: #212529;
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+.navbar {
+    backdrop-filter: blur(15px);
+    background-color: rgba(33, 37, 41, 0.98) !important;
+    padding: 1rem 0;
+}
+
+.ls-tight {
+    letter-spacing: -0.5px;
+}
+
+.hero-section {
+    background: radial-gradient(circle at top right, #f8fbff 0%, #f1f4f9 100%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card {
+    transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 1.25rem;
+}
+
+.featured-card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+
+.featured-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.post-card:hover .card-img-top {
+    transform: scale(1.08);
+}
+
+.btn-dark {
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-dark:hover {
+    background-color: #000;
+    transform: scale(1.02);
+}
+
+.badge {
+    padding: 0.5em 1em;
+    font-weight: 600;
+}
+
+.pagination .page-link {
+    border: none;
+    color: #555;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+    margin: 0 5px;
+    font-weight: 600;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--tech-dark);
+    color: #fff;
+}
+
+footer a i {
+    transition: all 0.3s ease;
+}
+
+footer a i:hover {
+    color: var(--primary-color) !important;
+    transform: translateY(-3px);
+}
+
+.input-group .form-control {
+    padding: 0.75rem 1.2rem;
+}
+
+.input-group .form-control:focus {
+    box-shadow: 0 0 0 4px rgba(13, 202, 240, 0.15);
+}
+
+@media (max-width: 1199.98px) {
+    .featured-card img {
+        height: 300px;
+        width: 100%;
+    }
+}
